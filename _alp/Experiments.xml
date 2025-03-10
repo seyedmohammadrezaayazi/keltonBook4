@@ -1,6 +1,237 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Experiments>
-	<SimulationExperiment ActiveObjectClassId="1741622997467">
+	<ParamVariationExperiment ActiveObjectClassId="1741623097388">
+		<Id>1741623183687</Id>
+		<Name><![CDATA[ParametersVariation]]></Name>
+		<CommandLineArguments/>
+		<MaximumMemory>2048</MaximumMemory>
+		<RandomNumberGenerationType>fixedSeed</RandomNumberGenerationType>
+		<CustomGeneratorCode>new Random()</CustomGeneratorCode>
+		<AfterSimulationRunCode>dataset.add(root.serviceA.size());</AfterSimulationRunCode>
+		<SeedValue>1</SeedValue>
+		<SelectionModeForSimultaneousEvents>LIFO</SelectionModeForSimultaneousEvents>
+		<VmArgs/>
+		<LoadRootFromSnapshot>false</LoadRootFromSnapshot>
+		<AnalysisData>
+			<DataSet>
+				<Id>1741623183690</Id>
+				<Name><![CDATA[dataset]]></Name>
+				<X>480</X>
+				<Y>110</Y>
+				<Label>
+					<X>15</X>
+					<Y>0</Y>
+				</Label>
+				<PublicFlag>false</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>true</ShowLabel>
+				<AutoUpdate>false</AutoUpdate>
+				<OccurrenceAtTime>true</OccurrenceAtTime>
+				<OccurrenceDate>1650960000000</OccurrenceDate>
+				<OccurrenceTime Class="CodeUnitValue">
+					<Code><![CDATA[0]]></Code>
+					<Unit Class="TimeUnits">MINUTE</Unit>
+				</OccurrenceTime>
+				<RecurrenceCode Class="CodeUnitValue">
+					<Code><![CDATA[1]]></Code>
+					<Unit Class="TimeUnits">MINUTE</Unit>
+				</RecurrenceCode>
+				<FreezeXAxis>true</FreezeXAxis>
+				<SamplesToKeep>100</SamplesToKeep>
+			</DataSet>
+		</AnalysisData>
+		<Presentation>
+			<Text>
+				<Id>1741623183692</Id>
+				<Name><![CDATA[text]]></Name>
+				<X>40</X>
+				<Y>30</Y>
+				<Label>
+					<X>10</X>
+					<Y>0</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+				<EmbeddedIcon>false</EmbeddedIcon>
+				<Z>0</Z>
+				<Rotation>0.0</Rotation>
+				<Color>-12490271</Color>
+				<Text><![CDATA[Model kelton 1401_2_4_3 : ParametersVariation]]></Text>
+				<Font>
+					<Name><![CDATA[SansSerif]]></Name>
+					<Size>24</Size>
+					<Style>0</Style>
+				</Font>
+				<Alignment>LEFT</Alignment>
+			</Text>
+			<Text>
+				<Id>1741623183694</Id>
+				<Name><![CDATA[text1]]></Name>
+				<X>50</X>
+				<Y>80</Y>
+				<Label>
+					<X>10</X>
+					<Y>0</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+				<EmbeddedIcon>false</EmbeddedIcon>
+				<Z>0</Z>
+				<Rotation>0.0</Rotation>
+				<Color>-12171190</Color>
+				<Text><![CDATA[Iterations completed:]]></Text>
+				<Font>
+					<Name><![CDATA[SansSerif]]></Name>
+					<Size>12</Size>
+					<Style>0</Style>
+				</Font>
+				<Alignment>LEFT</Alignment>
+			</Text>
+			<Text>
+				<Id>1741623183696</Id>
+				<Name><![CDATA[text2]]></Name>
+				<X>240</X>
+				<Y>80</Y>
+				<Label>
+					<X>10</X>
+					<Y>0</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+				<VisibleCode>getCurrentIteration() &gt; 0</VisibleCode>
+				<EmbeddedIcon>false</EmbeddedIcon>
+				<Z>0</Z>
+				<Rotation>0.0</Rotation>
+				<Color>-12042869</Color>
+				<Text><![CDATA[?]]></Text>
+				<TextCode>format(getNumberOfCompletedIterations())</TextCode>
+				<Font>
+					<Name><![CDATA[SansSerif]]></Name>
+					<Size>12</Size>
+					<Style>0</Style>
+				</Font>
+				<Alignment>RIGHT</Alignment>
+			</Text>
+			<Rectangle>
+				<Id>1741623183698</Id>
+				<Name><![CDATA[rectangle]]></Name>
+				<X>40</X>
+				<Y>100</Y>
+				<Label>
+					<X>10</X>
+					<Y>0</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+				<EmbeddedIcon>false</EmbeddedIcon>
+				<Z>0</Z>
+				<ZHeight>10</ZHeight>
+				<LineWidth>1</LineWidth>
+				<LineColor/>
+				<LineMaterial>null</LineMaterial>
+				<LineStyle>SOLID</LineStyle>
+				<Width>210</Width>
+				<Height>30</Height>
+				<Rotation>0.0</Rotation>
+				<FillColor>-657931</FillColor>
+				<FillMaterial>null</FillMaterial>
+			</Rectangle>
+			<Text>
+				<Id>1741623183700</Id>
+				<Name><![CDATA[text3]]></Name>
+				<X>50</X>
+				<Y>110</Y>
+				<Label>
+					<X>10</X>
+					<Y>0</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+				<EmbeddedIcon>false</EmbeddedIcon>
+				<Z>0</Z>
+				<Rotation>0.0</Rotation>
+				<Color>-12171190</Color>
+				<Text><![CDATA[Replication:]]></Text>
+				<Font>
+					<Name><![CDATA[SansSerif]]></Name>
+					<Size>12</Size>
+					<Style>0</Style>
+				</Font>
+				<Alignment>LEFT</Alignment>
+			</Text>
+			<Text>
+				<Id>1741623183702</Id>
+				<Name><![CDATA[text4]]></Name>
+				<X>240</X>
+				<Y>110</Y>
+				<Label>
+					<X>10</X>
+					<Y>0</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+				<VisibleCode>getCurrentIteration() &gt; 0</VisibleCode>
+				<EmbeddedIcon>false</EmbeddedIcon>
+				<Z>0</Z>
+				<Rotation>0.0</Rotation>
+				<Color>-12042869</Color>
+				<Text><![CDATA[?]]></Text>
+				<TextCode>format(getCurrentReplication())</TextCode>
+				<Font>
+					<Name><![CDATA[SansSerif]]></Name>
+					<Size>12</Size>
+					<Style>0</Style>
+				</Font>
+				<Alignment>RIGHT</Alignment>
+			</Text>
+		</Presentation>
+		<AllowParallelEvaluations>true</AllowParallelEvaluations>
+		<UseFreeformParameters>false</UseFreeformParameters>
+		<NumberOfRuns>10</NumberOfRuns>
+		<FreeformParamValue>
+			<Id>1741623098113</Id>
+		</FreeformParamValue>
+		<RangeVariationParamValue>
+			<Id>1741623098113</Id>
+			<Type><![CDATA[FIXED]]></Type>
+		</RangeVariationParamValue>
+		<ModelTimeProperties>
+			<StopOption>Stop at specified time</StopOption>
+			<InitialDate>1650758400000</InitialDate>
+			<InitialTime>0.0</InitialTime>
+			<FinalDate>1650873600000</FinalDate>
+			<FinalTime>1920.0</FinalTime>
+		</ModelTimeProperties>
+		<PresentationProperties>
+			<EnableZoomAndPanning>true</EnableZoomAndPanning>
+			<Title>Model kelton 1401_2_4_3 : ParametersVariation</Title>
+			<EnableDeveloperPanel>true</EnableDeveloperPanel>
+			<ShowDeveloperPanelOnStart>false</ShowDeveloperPanelOnStart>
+		</PresentationProperties>
+		<ReplicationsProperties>
+			<UseReplication>true</UseReplication>
+			<FixedReplicationsNumber>true</FixedReplicationsNumber>
+			<ReplicationPerIteration>5</ReplicationPerIteration>
+			<MinimumReplication>2</MinimumReplication>
+			<MaximumReplication>10</MaximumReplication>
+			<ConfidenceLevel>LEVEL_80</ConfidenceLevel>
+			<ErrorPercent>0.5</ErrorPercent>
+			<ExpressionForConfidenceComputation>0</ExpressionForConfidenceComputation>
+		</ReplicationsProperties>
+	</ParamVariationExperiment>
+	<SimulationExperiment ActiveObjectClassId="1741623097388">
 		<Id>1741622997476</Id>
 		<Name><![CDATA[Simulation]]></Name>
 		<CommandLineArguments/>
@@ -37,8 +268,38 @@
 				</Font>
 				<Alignment>LEFT</Alignment>
 			</Text>
+			<Image>
+				<Id>1741623284938</Id>
+				<Name><![CDATA[image]]></Name>
+				<X>420</X>
+				<Y>180</Y>
+				<Label>
+					<X>0</X>
+					<Y>-10</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+				<EmbeddedIcon>false</EmbeddedIcon>
+				<Z>0</Z>
+				<Width>936</Width>
+				<Height>823</Height>
+				<Rotation>0.0</Rotation>
+				<ImageFiles>
+					<ImageResourceReference>
+						<PackageName>keltonbook4</PackageName>
+						<ClassName>image.png</ClassName>
+					</ImageResourceReference>
+				</ImageFiles>
+				<OriginalSize>true</OriginalSize>
+			</Image>
 		</Presentation>
-		<Parameters/>
+		<Parameters>
+			<Parameter>
+				<ParameterName>parameter</ParameterName>
+			</Parameter>
+		</Parameters>
 		<PresentationProperties>
 			<EnableZoomAndPanning>true</EnableZoomAndPanning>
 			<ExecutionMode>realTimeScaled</ExecutionMode>
@@ -48,12 +309,12 @@
 			<RealTimeScale>1.0</RealTimeScale>
 		</PresentationProperties>
 		<ModelTimeProperties>
-			<StopOption>Never</StopOption>
+			<StopOption>Stop at specified time</StopOption>
 			<InitialDate>1741564800000</InitialDate>
 			<InitialTime>0.0</InitialTime>
-			<FinalDate>1744243200000</FinalDate>
-			<FinalTime>100.0</FinalTime>
+			<FinalDate>1741680000000</FinalDate>
+			<FinalTime>1920.0</FinalTime>
 		</ModelTimeProperties>
-		<BypassInitialScreen>true</BypassInitialScreen>
+		<BypassInitialScreen>false</BypassInitialScreen>
 	</SimulationExperiment>
 </Experiments>
